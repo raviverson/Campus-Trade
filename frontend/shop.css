@@ -9,6 +9,7 @@
 body {
   background-color: #1f1e26;
   color: #333;
+
 }
 
 /* navbar */
@@ -33,6 +34,10 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: 500;
+}
+
+nav a:hover {
+  color: #e6a59a;
 }
 
 nav a.active {
@@ -79,6 +84,11 @@ nav a.active {
   font-weight: 50px;
 }
 
+.categories a:hover {
+  color: #e6a59a;
+}
+
+
 /* product listings */
 .product-listings {
   flex: 1;
@@ -110,7 +120,7 @@ nav a.active {
 
 .desc {
   font-size: 0.9rem;
-  color: #white;
+  color: white;
   margin-bottom: 10px;
 }
 
