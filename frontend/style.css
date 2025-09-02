@@ -21,11 +21,13 @@ body {
   padding: 15px 40px;
   background: #1f1e26;
   border-bottom: 1px solid #ddd;
+
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.19rem;
   font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;;
 }
 
 .search-bar {
@@ -54,10 +56,15 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .nav-links a i {
   margin-right: 6px;
+}
+
+.nav-links a:hover {
+  color: #e6a59a;
 }
 
 
