@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CampusTrade - Register</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>CampusTrade - Login</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="login&register.css">
+  <link rel="icon" type="image/x-icon" href="/assets/ct logo.png">
+  <link rel="stylesheet" href="register.css">
+
 </head>
 <body>
-  <div class="auth-container">
+  <div class="auth-container2">
     <div class="header">
-      <h3>Register to<br>Campus Trade</h3>
+      <h6 style="margin-bottom: 10px;">Campus Trade</h6>
+      <h3 id="title">CREATE ACCOUNT CAMPUS TRADE</h3>
+      <p>Need a Campus Trade account? <span style="text-decoration: underline;"> <a href="register.html">Create Account</a></span></p>
     </div>
-    <form>
-      <label for="email" name="email"></label>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <input type="password" placeholder="Confirm Password" required>
-      <button type="submit">Register</button>
-      <p>Already have an account? <a href="login.html">Login</a></p>
-    </form>
+    <div class="form-container">
+      <form>
+        <input type="email" placeholder="Email" required style="border: 1px solid  rgb(129, 127, 127); background-color:  #4d4a63;">
+        <input type="password" placeholder="Password" required style="border: 1px solid  rgb(129, 127, 127); background-color:  #4d4a63;">
+        <input type="text" placeholder="Address" required style="border: 1px solid  rgb(129, 127, 127); background-color:  #4d4a63;">
+        <input type="date" placeholder="date" required style="border: 1px solid  rgb(129, 127, 127); background-color:  #4d4a63;">
+        <button type="submit"><h6>Login</h6></button>
+        <p style="text-decoration:underline; align-self: flex-start;">Forgot password?</p>
+      </form>
+    </div>
+    <div class="footer">
+      <h6 style="color: white; margin-top: 13px; margin-bottom: 13px;">Or, if you created your Campus Trade account with Google:</h6>
+      <button style="border:1px solid white; background-color: #4d4a63; width: 100%;"><h6>Continue with Google</h6></button>
+    </div>
   </div>
 </body>
 </html>
