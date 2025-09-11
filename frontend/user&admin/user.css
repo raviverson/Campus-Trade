@@ -8,7 +8,7 @@
 
 body {
   background-color: #1f1e26;
-  color: #333;
+  color: white;
 
 }
 
@@ -224,7 +224,6 @@ footer a {
 }
 
 
-/* Responsive */
 @media (max-width: 768px) {
   .dashboard {
     flex-direction: column;

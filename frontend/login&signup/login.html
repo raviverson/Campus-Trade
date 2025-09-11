@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/assets/ct logo.png">
-  <link rel="stylesheet" href="/frontend/login&signup/register.css">
+  <link rel="stylesheet" href="/frontend/login&signup/register&login.css">
 </head>
 <body>
   <div class="auth-container">
@@ -18,12 +18,12 @@
       <p>Already have an Account? <span style="text-decoration: underline;"> <a href="/frontend/login&signup/register.html">Sign in</a></span></p>
     </div>
     <div class="form-container2">
-      <form>
+      <form onsubmit="event.preventDefault(); window.location.href='/frontend/user&admin/user.html';">
         <input type="email" placeholder="Email" required>
         <input type="password" placeholder="Password" required>
         <button type="submit"><h6 style="font-size: 15px;">Login</h6></button>
-        <p>Forgot password?</p>
-      </form>
+      <p>Forgot password?</p>
+</form>
     </div>
     <div class="footer">
       <h6>Or, if you created your Campus Trade account with Google:</h6>
