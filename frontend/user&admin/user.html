@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard - CampusTrade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="/assets/ct logo.png">
+
+  <link rel="stylesheet" href="user.css">
+</head>
+<body>
+  <!-- for header and navbar -->
+  <header class="navbar">
+    <div class="logo">CampusTrade</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+
+<main class="dashboard">
+  <!-- Toggled menu button -->
+  <button class="menu-toggle">☰ My Account</button>
+    
+  <!-- Sidebar (hidden until toggled) -->
+  <aside class="categories" id="sidebar">
+    <h3>My Account</h3>
+    <ul>
+      <li><a href="#">👤 Manage My Account</a></li>
+      <li><a href="#">📦 All Orders</a></li>
+      <li><a href="#">🚚 Shipped Orders</a></li>
+      <li><a href="#">⭐ Review Orders</a></li>
+      <li><a href="#">🛒 My Orders</a></li>
+      <li><a href="#">✉️ Messages</a></li>
+    </ul>
+  </aside>
+</main>
+
+
+    <!-- for dashboard content -->
+    <section class="user-content">
+      <h2>Hello, User 👋</h2>
+      <p>Welcome back to your CampusTrade dashboard. Here you can manage your orders, account, and messages.</p>
+
+      <!-- Example Order Section -->
+      <div class="dashboard-section">
+        <h3>Recent Orders</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Product</th>
+              <th>Status</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#1001</td>
+              <td>Book - Data Structures</td>
+              <td>Shipped</td>
+              <td>₱500</td>
+              <td><button class="view">View</button></td>
+            </tr>
+            <tr>
+              <td>#1002</td>
+              <td>Uniform Set</td>
+              <td>Processing</td>
+              <td>₱800</td>
+              <td><button class="view">View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Example Messages Section -->
+      <div class="dashboard-section">
+        <h3>Messages</h3>
+        <p>You don’t have any new messages.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CampusTrade. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

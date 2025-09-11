@@ -17,21 +17,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: 4d4a63;
+  padding: 30px 100px;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.80rem;
   font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .nav-links a {
+  font-size: 1.20rem;
   margin-left: 20px;
   text-decoration: none;
   color: white;
   font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* car section */

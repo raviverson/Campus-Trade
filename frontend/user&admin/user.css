@@ -1,0 +1,238 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-color: #1f1e26;
+  color: #333;
+
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1e26;
+  color: white;
+  padding: 30px 100px;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo {
+  font-size: 1.80rem;
+  font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+nav a {
+  font-size: 1.20rem;
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+nav a:hover {
+  color: #e6a59a;
+}
+
+nav a.active {
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: hidden;
+  background: #e6a59a;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#sidebar {
+  transition: max-height 0,3s ease-in-out;
+  overflow: hidden;
+}
+
+
+/* shop container */
+.shop-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* sidebar */
+.categories {
+  width: 200px;
+  background: #4d4a63;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* categories section */
+.categories h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600px;
+}
+
+.categories ul {
+  list-style: none;
+}
+
+.categories li {
+  margin: 8px 0;
+  
+}
+
+.categories a {
+  text-decoration: none;
+  color: white;
+  font-weight: 50px;
+}
+
+.categories a:hover {
+  color: #e6a59a;
+}
+
+
+/* product listings */
+.product-listings {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: #4d4a63;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.product-img {
+  background: #e5e7eb;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.add-cart, .buy {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-cart {
+  background: #333;
+  color: white;
+}
+
+.buy {
+  background: #16a34a;
+  color: white;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: white;
+}
+
+footer a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.dashboard {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+
+
+
+/* for admin tables */
+.admin-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #4d4a63;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admin-panel th, .admin-panel td {
+  padding: 12px;
+  border: 1px solid #666;
+  text-align: center;
+}
+
+.admin-panel button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-panel .edit {
+  background: #2563eb;
+  color: white;
+}
+
+.admin-panel .delete {
+  background: #dc2626;
+  color: white;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .categories {
+    width: 100%;
+  }
+  .product-listings {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}   

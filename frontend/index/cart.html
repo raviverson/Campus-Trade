@@ -7,27 +7,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="icon" type="image/x-icon" href="/assets/ct logo.png">
-  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="/frontend/index/cart.css">
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- for navbar -->
   <nav class="navbar">
     <div class="logo">CampusTrade</div>
     <div class="nav-links">
-      <a href="index.html"><i class="fas fa-home"></i> Home</a>
-      <a href="shop.html" class="active"><i class="fas fa-store"></i> Shop</a>
-      <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+      <a href="/frontend/index/index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="/frontend/shop/shop.html" class="active"><i class="fas fa-store"></i> Shop</a>
+      <a href="/frontend/login&signup/"><i class="fa fa-user"></i> Logout</a>
     </div>
   </nav>
 
-  <!-- Cart Section -->
+  <!-- for cart section -->
   <section class="cart">
     <h2>Your Shopping Cart</h2>
     <div class="cart-container">
 
-      <!-- Example Cart Item -->
+      <!-- sample item 1  -->
       <div class="cart-item">
         <img src="/assets/uniform.png" alt="Uniform" class="product-img">
         <div class="item-details">
@@ -42,7 +45,7 @@
         <button class="remove-btn">Remove</button>
       </div>
 
-      <!-- Example Cart Item -->
+      <!-- sample item 2 -->
       <div class="cart-item">
         <img src="/assets/book.png" alt="Book">
         <div class="item-details">
@@ -61,10 +64,10 @@
     <!-- Cart Summary -->
     <div class="cart-summary">
       <h3>Order Summary</h3>
-      <p>Subtotal: ₱1,100</p>
+      <p>Subtotal: ₱800</p>
       <p>Shipping: ₱50</p>
-      <p><strong>Total: ₱1,150</strong></p>
-      <a href="checkout.html" class="btn primary">Proceed to Checkout</a>
+      <p><strong>Total: ₱850</strong></p>
+      <a href="/frontend/index/checkout.html" class="btn primary">Proceed to Checkout</a>
     </div>
   </section>
 

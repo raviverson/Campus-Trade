@@ -19,22 +19,28 @@ body {
   align-items: center;
   background: #1f1e26;
   color: white;
-  padding: 15px 40px;
+  padding: 30px 100px;
   border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.80rem;
   font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 
 nav a {
+  font-size: 1.20rem;
   margin-left: 15px;
   text-decoration: none;
   color: white;
   font-weight: 500;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 nav a:hover {
@@ -95,7 +101,7 @@ nav a.active {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 50px;
+  gap: 25px;
 }
 
 .product-card {
