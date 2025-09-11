@@ -1,102 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
-}
-
-body {
-  background: #1f1e26;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header{
-  color: white;
-}
-
-h6 {
-  font-size: 9px;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 9px;
-  font-weight: 500;
-}
-
-h3 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 45px;
-  font-weight: 400;
-  color: white;
-}
-
-.auth-container2 {
-  background: #4d4a63;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 570px;
-  height: 750px;
-  text-align: center;
-}
-.auth-container2 h2 {
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-  color: #333;
-}
-
-.auth-container2 form {
-  display: flex;
-  flex-direction: column;
-}
-
-.auth-container2 input {
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.auth-container2 button {
-  padding: 10px;
-  background: #807c9a;
-  color: white;
-  border: 1px solid #6a6780;
-  cursor: pointer;
-  margin-top: 10px;
-  border-radius: 5px;
-}
-
-.auth-container2 button:hover {
-  background: #1f1e26;
-}
-
-.auth-container2 p {
-  margin-top: 15px;
-  font-size: 0.9rem;
-  color: white;
-}
-
-.auth-container2 a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.auth-container2 a:hover {
-  text-decoration: underline;
-}
-
-.form-container2 {
-  margin-top: 30px;
-  height: 13vh;
-  border-bottom: 1px solid  rgb(129, 127, 127);
-}
-
+ body {
+      font-family: 'Nunito', sans-serif;
+      background: #2d2a3a;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+    .auth-container2 {
+      background: #393654;
+      border-radius: 15px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+      width: 400px;
+      padding: 30px;
+      margin: 60px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .header h6 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      margin: 0;
+    }
+    .header h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 10px 0;
+      color: #fff;
+    }
+    .header p {
+      font-size: 14px;
+      color: #bdbdbd;
+      margin: 0;
+    }
+    .header a {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .form-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+      height: 40vh;
+    }
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="date"] {
+      width: 95%;
+      padding: 12px 10px;
+      border-radius: 7px;
+      border: 1px solid rgb(129, 127, 127);
+      background-color: #4d4a63;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      margin-bottom: 0;
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      filter: invert(1);
+    }
+    button[type="submit"] {
+      height: 40px;
+      background: #fff;
+      color: #393654;
+      border: none;
+      border-radius: 7px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button[type="submit"]:hover {
+      background: #e0e0e0;
+    }
+    button[type="submit"] h6 {
+      font-size: 15px;
+      margin: 0;
+      color: #393654;
+    }
+    form p {
+      text-decoration: underline;
+      align-self: flex-start;
+      color: #bdbdbd;
+      font-size: 13px;
+      margin: 0;
+      cursor: pointer;
+    }
+    .footer {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .footer h6 {
+      color: white;
+      margin-top: 13px;
+      margin-bottom: 13px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .footer button {
+      border: 1px solid white;
+      background-color: #4d4a63;
+      width: 100%;
+      height: 40px;
+      border-radius: 7px;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .footer button:hover {
+      background: #393654;
+    }
+    .footer button h6 {
+      margin: 0;
+      font-size: 15px;
+      color: #fff;
+    }
+    @media (max-width: 500px) {
+      .auth-container2 {
+        width: 95vw;
+        padding: 15px 5vw;
+      }
+    }
