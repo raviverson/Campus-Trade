@@ -6,22 +6,30 @@
 }
 
 body {
-  background: #1f1e26;;
+  min-height: 100vh;
+  background: #1f1e26;
   color: white;
   line-height: 1.6;
 }
 
-/* Navbar */
+/* navbar */
+/* navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 30px 100px;
-  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background: #24232b;
   position: sticky;
   top: 0;
   z-index: 1000;
-  
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  width: 80%;
+  border: #5b5b5b solid 1px;
 
 }
 
@@ -29,6 +37,30 @@ body {
   font-size: 1.80rem;
   font-weight: 600;
   font-family: "Bebas Neue", sans-serif;
+}
+
+.search-bar {
+  position: relative;
+  flex: 1;
+  margin: 0 20px;;
+
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 35px 8px 12px;
+  border: 1px solid #514e65;
+  border-radius: 20px;
+  background: #1f1e26;
+  border-bottom: solid #ddd;
+}
+
+.search-bar i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
 }
 
 .nav-links a {
@@ -39,6 +71,15 @@ body {
   font-weight: 500;
   font-family: "Bebas Neue", sans-serif;
 }
+
+.nav-links a i {
+  margin-right: 6px;
+}
+
+.nav-links a:hover {
+  color: #e6a59a;
+}
+
 
 /* car section */
 .cart {
