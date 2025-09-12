@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CampusTrade - Admin Dashboard</title>
+  <title>CampusTrade - Admin Dashboard - </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -16,59 +16,23 @@
 
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- for navbar -->
   <header class="navbar">
-    <div class="logo">CampusTrade Admin</div>
+    <div class="logo">CampusTrade</div>
     <nav>
-      <a href="admin.html">Dashboard</a>
-      <a href="user.html">Users</a>
-      <a href="product.html">Products</a>
+      <a href="/frontend/index/index.html">Home</a>
       <a href="index.html">Logout</a>
     </nav>
   </header>
 
-  <!-- Admin Content -->
-  <main class="dashboard">
+  
+    <main class="dashboard">
     <!-- Sidebar -->
     <aside class="categories">
       <h3>Manage</h3>
       <ul>
-        <li><a href="#">Users</a></li>
+        <li><a href="users.html">Users</a></li>
         <li><a href="#">Products</a></li>
         <li><a href="#">Orders</a></li>
       </ul>
     </aside>
-
-    <!-- Content Area -->
-    <section class="admin-panel">
-      <h2>Users</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Juan Dela Cruz</td>
-            <td>juan@email.com</td>
-            <td>
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 CampusTrade Admin Panel.</p>
-  </footer>
-</body>
-</html>

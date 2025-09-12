@@ -101,7 +101,7 @@ nav a.active {
   flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 50px;
+  gap: 40px;
 }
 
 .product-card {
@@ -111,6 +111,8 @@ nav a.active {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   text-align: center;
+  width: 250px;
+  height: 400px;
 }
 
 .product-img {
