@@ -14,6 +14,8 @@
   <link rel="icon" type="image/x-icon" href="/assets/ct logo.png">
   <link rel="stylesheet" href="/frontend/index/cart.css">
 </head>
+
+
 <body>
   <!-- for navbar -->
  <header class="navbar">
@@ -79,5 +81,22 @@
   <footer>
     <p>&copy; 2025 Campus Trade. All rights reserved.</p>
   </footer>
+    <script>
+    document.querySelectorAll('.cart-item').forEach(function(item) {
+      const minusBtn = item.querySelector('.qty-btn:first-child');
+      const plusBtn = item.querySelector('.qty-btn:last-child');
+      const qtyInput = item.querySelector('input[type="text"]');
+
+      minusBtn.addEventListener('click', function() {
+        let value = parseInt(qtyInput.value, 10);
+        if (value > 1) qtyInput.value = value - 1;
+      });
+
+      plusBtn.addEventListener('click', function() {
+        let value = parseInt(qtyInput.value, 10);
+        qtyInput.value = value + 1;
+      });
+    });
+  </script>
 </body>
 </html>
